@@ -27,17 +27,16 @@ public class Programa {
     	mensalidade = 60.0;
       }
     } else if (sexo.equalsIgnoreCase("F")) {
-      if (idade <= 15) {
+      if (idade <=18) {
         mensalidade = 60.0;
-      } else if (idade <= 18) {
-        mensalidade = 60.0;
-      } else if (idade <= 30) {
+      } else if (idade <= 25) {
         mensalidade = 90.0;
-      } else if (idade <= 402) {
+      } else if (idade <= 40) {
         mensalidade = 85.0;
-      } else {
-        mensalidade = 80.0;
-      }
+      } else if (idade <= 50) {
+          mensalidade = 65.0;
+      } else if (idade>50) {
+        mensalidade = 50.0;}
     } else {
       System.out.println("Sexo inválido.");
       mensalidade = 0.0;
