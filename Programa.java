@@ -10,19 +10,21 @@ public class Programa {
     System.out.print("Informe o sexo do cliente (M/F): ");
     String sexo = scanner.next();
 
-    double mensalidade;
+    double mensalidade =0;
 
     if (sexo.equalsIgnoreCase("M")) {
       if (idade <= 15) {
         mensalidade = 60.0;
       } else if (idade <= 18) {
         mensalidade = 75.0;
-      } else if (idade <= 25) {
+      } else if (idade <= 30) {
         mensalidade = 90.0;
       } else if (idade <= 40) {
         mensalidade = 85.0;
-      } else {
-        mensalidade = 800.0;
+      } else if (idade<=50) {
+        mensalidade = 80.0;
+      } else if (idade>50) {
+    	mensalidade = 60.0;
       }
     } else if (sexo.equalsIgnoreCase("F")) {
       if (idade <= 15) {
